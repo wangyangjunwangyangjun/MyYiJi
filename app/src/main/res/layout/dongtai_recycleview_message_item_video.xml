@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/videolikelogo"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/xihuan"
+        app:layout_constraintBottom_toBottomOf="@+id/videolikelist"
+        app:layout_constraintEnd_toEndOf="@+id/videolikelist"
+        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintStart_toStartOf="@+id/videolikelist"
+        app:layout_constraintTop_toTopOf="@+id/videolikelist" />
+    <ImageView
+        android:id="@+id/user_logo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/user_id"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/idcolor"
+        android:gravity="left"
+        android:textSize="18dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <TextView
+        android:id="@+id/video_textState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/video"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/video_user_describtion"
+        app:layout_constraintTop_toBottomOf="@+id/video_user_describtion"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/video_user_describtion"
+        android:layout_width="290dp"
+        android:layout_height="120dp"
+        android:gravity="left"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/user_id"
+        app:layout_constraintTop_toBottomOf="@+id/user_id" />
+
+
+    <VideoView
+        android:id="@+id/video"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/video_textState"
+        app:layout_constraintTop_toBottomOf="@+id/video_user_describtion" />
+
+    <TextView
+        android:id="@+id/time_video"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="14dp"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/video"
+        app:layout_constraintTop_toBottomOf="@+id/video"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/more_button_video"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:width="30dp"
+        android:height="30dp"
+        android:background="@drawable/more"
+        android:layout_marginRight="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/videocomment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video" />
+
+    <TextView
+        android:id="@+id/videolikelist"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        app:layout_constraintEnd_toEndOf="@+id/more_button_only_word"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/time_video"
+        app:layout_constraintTop_toBottomOf="@+id/more_button_video" />
+
+    <TextView
+        android:id="@+id/videocomment"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/videolikelist"
+        app:layout_constraintStart_toStartOf="@+id/videolikelist"
+        app:layout_constraintTop_toBottomOf="@+id/videolikelist"
+        app:layout_constraintVertical_bias="0.428" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

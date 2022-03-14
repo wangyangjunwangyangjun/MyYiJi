@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:title="@string/JiZhang"
+        android:icon="@drawable/jizhang"
+        android:id="@+id/JiZhangButtom" />
+    <item android:id="@+id/TongJiButtom"
+        android:icon="@drawable/tongji"
+        android:title="@string/TongJi" />
+    <item android:id="@+id/DongTaiButtom"
+        android:icon="@drawable/dongtai"
+        android:title="@string/dongtai"/>
+    <item android:icon="@drawable/wode"
+        android:title="@string/wode"
+        android:id="@+id/wodebuttom"/>
+</menu>
+<!--    tools:showIn="navigation_view"-->

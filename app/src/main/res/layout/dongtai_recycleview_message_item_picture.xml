@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/picturelikelogo"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/xihuan"
+        app:layout_constraintBottom_toBottomOf="@+id/picturelikelist"
+        app:layout_constraintEnd_toEndOf="@+id/picturelikelist"
+        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintStart_toStartOf="@+id/picturelikelist"
+        app:layout_constraintTop_toTopOf="@+id/picturelikelist" />
+
+    <ImageView
+        android:id="@+id/user_logo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/user_id"
+        android:layout_width="200dp"
+        android:textColor="@color/idcolor"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textSize="18dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <TextView
+        android:id="@+id/picture_textState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/pictures"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/picture_user_describtion"
+        app:layout_constraintTop_toBottomOf="@+id/picture_user_describtion"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/picture_user_describtion"
+        android:layout_width="290dp"
+        android:layout_height="122dp"
+        android:textSize="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/user_id"
+        app:layout_constraintTop_toBottomOf="@+id/user_id" />
+
+    <com.example.myyiji.MyGridView
+        android:id="@+id/pictures"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:columnWidth="70dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/picture_textState"
+        app:layout_constraintTop_toBottomOf="@+id/picture_user_describtion" />
+
+    <TextView
+        android:id="@+id/time_picture"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/small"
+        android:paddingBottom="20dp"
+        android:textColor="@color/gray"
+        app:layout_constraintStart_toStartOf="@+id/pictures"
+        app:layout_constraintTop_toBottomOf="@+id/pictures" />
+
+    <Button
+        android:id="@+id/more_button_picture"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:width="30dp"
+        android:height="30dp"
+        android:background="@drawable/more"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_picture" />
+
+    <TextView
+        android:id="@+id/picturelikelist"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        app:layout_constraintEnd_toEndOf="@+id/more_button_picture"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/time_picture"
+        app:layout_constraintTop_toBottomOf="@+id/more_button_picture" />
+
+    <TextView
+        android:id="@+id/picturecomment"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/picturelikelist"
+        app:layout_constraintStart_toStartOf="@+id/picturelikelist"
+        app:layout_constraintTop_toBottomOf="@+id/picturelikelist"
+        app:layout_constraintVertical_bias="0.428" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

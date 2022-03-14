@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/dianzan"
+        android:title="点赞" />
+    <item
+        android:title="评论"
+        android:id="@+id/pinglun"/>
+</menu>
